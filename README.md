@@ -1,23 +1,23 @@
-🧼 **Coastal Shine Cleaning Website**
+🧼 # Coastal Shine Cleaning Website
 
-📌 ***Overview***
+📌 ## Overview
 
 Responsive website for a local cleaning business, transforming a leaflet into a modern, user-friendly design. Focused on clean UI, clear structure, and conversion across all devices.
 
-🎯 ***Project Goals***
+🎯 ## Project Goals
 
  - Create a modern website from an existing leaflet
  - Improve user experience and clarity
  - Build a fully responsive layout
  - Practice real-world front-end development
  
-🛠️ ***Tech Stack***
+🛠️ ## Tech Stack
 
  - HTML
  - CSS
  - JavaScript
  
-🚀 ***Features***
+🚀 ## Features
 
  - Responsive design (mobile, tablet, desktop)
  - Services and pricing sections
@@ -25,21 +25,21 @@ Responsive website for a local cleaning business, transforming a leaflet into a 
  - Testimonials
  - Contact form
  
-📸 ***Preview***
+📸 ## Preview
 
 (Add screenshots here later)
 
-🌐 ***Live Demo***
+🌐 ## Live Demo
 
 (Add your deployed link here)
 
-📚 ***What I Learned***
+📚 ## What I Learned
 
  - Responsive design principles
  - UI/UX structure for small businesses
  - Turning static design into a functional website
 
-🔮 ***Future Improvements***
+🔮 ## Future Improvements
 
  - Add booking system
  - Improve animations
