@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline' 'unsafe-eval' https://static.balsamiq.com/prototype/v1/; style-src 'unsafe-inline' https://static.balsamiq.com/prototype/v1/; font-src https://static.balsamiq.com/prototype/v1/; img-src data: https:; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none';"/>
+    <title>Cleaning Services Landing Page</title>
+
+    <!-- Fonts -->
+    <link href="https://static.balsamiq.com/prototype/v1/css/noto-fonts.css" rel="stylesheet"/>
+    <link href="https://static.balsamiq.com/prototype/v1/css/material-symbols-outlined.css" rel="stylesheet"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://static.balsamiq.com/prototype/v1/js/tailwindcss-3.4.17.js"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d9b24c",
+                        "secondary": "#2f67a5",
+                        "background": "#ffffff",
+                        "surface": "#f8f7f4",
+                        "border": "#dddddd",
+                        "text-main": "#333333",
+                        "text-muted": "#666666",
+                    },
+                    borderRadius: {
+                        "theme": "0.25rem",
+                        "theme-sm": "calc(0.25rem * 0.5)",
+                        "theme-lg": "calc(0.25rem * 1.5)",
+                    },
+                    boxShadow: {
+                        "theme": "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "body": ["Noto Sans", "sans-serif"],
+                        "sans": ["Noto Sans", "sans-serif"],
+                    },
+                },
+            },
+        }
+    </script>
+
+    <!-- Alpine.js Plugins -->
+    <script defer src="https://static.balsamiq.com/prototype/v1/js/alpinejs-collapse-3.14.9.min.js"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://static.balsamiq.com/prototype/v1/js/alpinejs-3.14.9.min.js"></script>
+
+    <style>
+        /* Prevent flash of unstyled content */
+        [x-cloak] { display: none !important; }
+        .font-display { font-family: 'Noto Serif', serif; }
+        .font-body { font-family: 'Noto Sans', sans-serif; }
+    </style>
+
+</head>
+<body class="bg-background text-text-main font-body antialiased min-h-screen"
+      x-data="{ page: 'main', formData: {} }">
+
+<!-- Page: Main Landing Page -->
+<div x-show="page === 'main'" class="min-h-screen bg-[#f8f7f4] text-text-main font-sans">
+  
+  <!-- Header / Navigation -->
+  <header data-control-id="138" class="w-full bg-[#f8f7f4] sticky top-0 z-50 border-b border-border/50">
+    <div class="max-w-7xl mx-auto px-4 md:px-8 py-6 flex items-center justify-between">
+      <div data-control-id="139" class="text-3xl md:text-4xl font-bold text-primary">
+        Coastal Shine Cleaning
+      </div>
+      <nav class="hidden md:flex items-center gap-8">
+        <a data-control-id="140" @click.prevent="page = 'main'" class="text-primary font-bold hover:opacity-80 transition-opacity">Home</a>
+        <a data-control-id="141" @click.prevent class="text-primary font-bold hover:opacity-80 transition-opacity">About</a>
+        <a data-control-id="142" @click.prevent class="text-primary font-bold hover:opacity-80 transition-opacity">Services</a>
+        <a data-control-id="143" @click.prevent class="text-primary font-bold hover:opacity-80 transition-opacity">Contact</a>
+      </nav>
+      <button class="md:hidden material-symbols-outlined text-primary">menu</button>
+    </div>
+	
+  </header>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 95 1440 200"><path fill="#0099ff" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,117.3C480,107,600,85,720,101.3C840,117,960,171,1080,186.7C1200,203,1320,181,1380,170.7L1440,160L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+  <!-- Hero Section -->
+  <section data-control-id="144" class="relative py-20 md:py-32 overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 text-center flex flex-col items-center gap-8">
+      <h1 data-control-id="145" class="text-5xl md:text-7xl font-bold text-primary leading-tight">
+        Professional & Reliable Cleaning Services
+      </h1>
+      <p data-control-id="146" class="text-2xl md:text-3xl text-text-main">
+        Brighton & Hove
+      </p>
+      
+      <div data-control-id="147" class="bg-secondary px-10 py-6 rounded-theme-lg shadow-theme transform hover:scale-105 transition-transform">
+        <span data-control-id="148" class="text-3xl md:text-4xl font-bold text-[#F8F7F4]">
+          From £18 per hour
+        </span>
+      </div>
+
+      <button data-control-id="149" @click="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})" class="bg-primary text-white text-2xl font-bold px-12 py-5 rounded-theme-lg shadow-theme hover:opacity-90 transition-all active:scale-95">
+        Book Now
+      </button>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 data-control-id="150" class="text-4xl md:text-5xl font-bold text-primary text-center mb-12">
+        Why Choose Us?
+      </h2>
+      <p data-control-id="151" class="text-xl md:text-2xl text-center max-w-4xl mx-auto mb-16 text-text-main leading-relaxed">
+        Coastal Shine Cleaning offers reliable, professional, and local cleaning services in Brighton & Hove, ensuring your home sparkles with a stress-free experience.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        <!-- Trusted -->
+        <div class="flex flex-col items-center gap-4">
+          <span data-control-id="152" class="material-symbols-outlined text-6xl text-secondary">handshake</span>
+          <span data-control-id="153" class="text-2xl font-bold text-primary">Trusted</span>
+        </div>
+        <!-- Local -->
+        <div class="flex flex-col items-center gap-4">
+          <span data-control-id="154" class="material-symbols-outlined text-6xl text-secondary">location_on</span>
+          <span data-control-id="155" class="text-2xl font-bold text-primary">Local</span>
+        </div>
+        <!-- Flexible -->
+        <div class="flex flex-col items-center gap-4">
+          <span data-control-id="156" class="material-symbols-outlined text-6xl text-secondary">calendar_today</span>
+          <span data-control-id="157" class="text-2xl font-bold text-primary">Flexible</span>
+        </div>
+        <!-- Stress-free -->
+        <div class="flex flex-col items-center gap-4">
+          <span data-control-id="158" class="material-symbols-outlined text-6xl text-secondary">eco</span>
+          <span data-control-id="159" class="text-2xl font-bold text-primary">Stress-free</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Services Section -->
+  <section class="py-20 bg-[#f8f7f4]">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 data-control-id="160" class="text-4xl md:text-5xl font-bold text-primary text-center mb-16">
+        Our Services
+      </h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <!-- Regular Cleaning -->
+        <div data-control-id="161" class="bg-surface p-10 rounded-theme-lg shadow-theme flex flex-col items-center text-center gap-6 border border-border/30 hover:shadow-lg transition-shadow">
+          <div data-control-id="162" class="w-24 h-24 bg-secondary rounded-full flex items-center justify-center">
+            <span data-control-id="163" class="material-symbols-outlined text-5xl text-[#f8f7f4]">cleaning_services</span>
+          </div>
+          <h3 data-control-id="164" class="text-3xl font-bold text-primary">Regular Cleaning</h3>
+          <p data-control-id="165" class="text-xl text-text-main leading-relaxed">
+            Keep your home consistently clean with our scheduled regular cleaning service.
+          </p>
+        </div>
+
+        <!-- Deep Cleaning -->
+        <div data-control-id="166" class="bg-surface p-10 rounded-theme-lg shadow-theme flex flex-col items-center text-center gap-6 border border-border/30 hover:shadow-lg transition-shadow">
+          <div data-control-id="167" class="w-24 h-24 bg-secondary rounded-full flex items-center justify-center">
+            <span data-control-id="168" class="material-symbols-outlined text-5xl text-[#f8f7f4]">sanitizer</span>
+          </div>
+          <h3 data-control-id="169" class="text-3xl font-bold text-primary">Deep Cleaning</h3>
+          <p data-control-id="170" class="text-xl text-text-main leading-relaxed">
+            For a thorough refresh, our deep cleaning service tackles every nook and cranny.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before & After Gallery -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 data-control-id="171" class="text-4xl md:text-5xl font-bold text-primary text-center mb-16">
+        Before & After
+      </h2>
+      <div class="flex flex-col md:flex-row gap-8 justify-center items-start">
+        <div class="flex-1 flex flex-col items-center gap-4">
+          <div data-control-id="207" class="bg-gray-200 rounded-theme-lg w-full aspect-[4/3] flex items-center justify-center text-text-muted overflow-hidden shadow-theme">
+            <span class="material-symbols-outlined text-6xl">image</span>
+          </div>
+          <span data-control-id="172" class="text-2xl font-bold text-text-main">Before</span>
+        </div>
+        <div class="flex-1 flex flex-col items-center gap-4">
+          <div data-control-id="208" class="bg-gray-200 rounded-theme-lg w-full aspect-[4/3] flex items-center justify-center text-text-muted overflow-hidden shadow-theme">
+            <span class="material-symbols-outlined text-6xl">image</span>
+          </div>
+          <span data-control-id="173" class="text-2xl font-bold text-text-main">After</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Offers -->
+  <section class="py-20 bg-[#f8f7f4]">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <h2 data-control-id="174" class="text-4xl md:text-5xl font-bold text-primary mb-12">
+        Pricing & Offers
+      </h2>
+      <div data-control-id="175" class="bg-secondary max-w-2xl mx-auto p-12 rounded-theme-lg shadow-theme text-[#F8F7F4] flex flex-col gap-6 transform hover:scale-105 transition-transform">
+        <p data-control-id="176" class="text-4xl md:text-5xl font-bold">From £18 per hour</p>
+        <p data-control-id="177" class="text-2xl md:text-3xl">Get £5 OFF your first clean</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+      <h2 data-control-id="178" class="text-4xl md:text-5xl font-bold text-primary text-center mb-16">
+        What Our Customers Say
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div data-control-id="179" class="bg-[#f8f7f4] p-8 rounded-theme-lg shadow-theme flex flex-col justify-between gap-6 border border-border/20">
+          <p data-control-id="180" class="text-xl italic text-text-main">
+            "This is a fantastic cleaning service! Highly recommend Coastal Shine Cleaning."
+          </p>
+          <p data-control-id="181" class="text-xl font-bold text-primary text-right">- Jane Doe</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div data-control-id="182" class="bg-[#f8f7f4] p-8 rounded-theme-lg shadow-theme flex flex-col justify-between gap-6 border border-border/20">
+          <p data-control-id="183" class="text-xl italic text-text-main">
+            "My home has never been cleaner. The team is professional and efficient."
+          </p>
+          <p data-control-id="184" class="text-xl font-bold text-primary text-right">- John Smith</p>
+        </div>
+        <!-- Testimonial 3 -->
+        <div data-control-id="185" class="bg-[#f8f7f4] p-8 rounded-theme-lg shadow-theme flex flex-col justify-between gap-6 border border-border/20">
+          <p data-control-id="186" class="text-xl italic text-text-main">
+            "Excellent service, very friendly staff. Will definitely be using them again!"
+          </p>
+          <p data-control-id="187" class="text-xl font-bold text-primary text-right">- Emily White</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="py-20 bg-[#f8f7f4]">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 data-control-id="188" class="text-4xl md:text-5xl font-bold text-primary text-center mb-12">
+        Contact Us
+      </h2>
+      <div data-control-id="189" class="bg-surface p-8 md:p-12 rounded-theme-lg shadow-theme border border-border/30">
+        <form x-data="{ submitted: false }" @submit.prevent="submitted = true" class="flex flex-col gap-6">
+          <div x-show="!submitted" class="flex flex-col gap-6">
+            <input data-control-id="190" type="text" x-model="formData['190']" placeholder="Name" class="w-full border border-border rounded-theme px-6 py-4 text-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
+            <input data-control-id="191" type="text" x-model="formData['191']" placeholder="Phone" class="w-full border border-border rounded-theme px-6 py-4 text-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all">
+            <textarea data-control-id="209" x-model="formData['209']" placeholder="Message" rows="5" class="w-full border border-border rounded-theme px-6 py-4 text-xl focus:ring-2 focus:ring-primary focus:border-primary outline-none transition-all"></textarea>
+            <button data-control-id="192" type="submit" class="bg-primary text-white text-2xl font-bold px-8 py-5 rounded-theme-lg shadow-theme hover:opacity-90 transition-all active:scale-95 mt-4">
+              Book your cleaning today
+            </button>
+          </div>
+          <div x-show="submitted" x-cloak class="text-center py-12">
+            <span class="material-symbols-outlined text-6xl text-green-500 mb-4">check_circle</span>
+            <h3 class="text-3xl font-bold text-primary">Thank you!</h3>
+            <p class="text-xl text-text-muted mt-2">We'll be in touch shortly to confirm your booking.</p>
+            <button @click="submitted = false" class="mt-8 text-primary underline">Send another message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer data-control-id="197" class="bg-primary text-[#F8F7F4] py-16">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col items-center text-center gap-8">
+      <div class="flex flex-col gap-2">
+        <h3 data-control-id="198" class="text-3xl font-bold">Coastal Shine Cleaning</h3>
+        <p data-control-id="199" class="text-2xl">Brighton & Hove</p>
+      </div>
+      
+      <p data-control-id="290" class="text-xl opacity-90">
+        Contact Details: info@coastalshine.com | 01234 567890
+      </p>
+
+      <!-- Social Icons -->
+      <div class="flex gap-6 mt-4">
+        <a @click.prevent data-control-id="201" class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+          <span data-control-id="202" class="material-symbols-outlined text-2xl">face_down</span>
+        </a>
+        <a @click.prevent data-control-id="203" class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+          <span data-control-id="204" class="material-symbols-outlined text-2xl">photo_camera</span>
+        </a>
+        <a @click.prevent data-control-id="205" class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center hover:opacity-80 transition-opacity">
+          <span data-control-id="206" class="material-symbols-outlined text-2xl">share</span>
+        </a>
+      </div>
+      
+      <div class="mt-12 pt-8 border-t border-white/10 w-full text-sm opacity-60">
+        &copy; 2023 Coastal Shine Cleaning. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
