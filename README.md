@@ -27,11 +27,13 @@ Responsive website for a local cleaning business, transforming a leaflet into a 
  
 ## 📸 Preview
 
-(Add screenshots here later)
+![Wireframe created on balsamiq as preview](assets/images/wireframe.png)
+
+
 
 ## 🌐 Live Demo
 
-(Add your deployed link here)
+![Prewiew desktop](assets/images/first_preview.png)
 
 ## 📚 What I Learned
 
