@@ -1,7 +1,8 @@
- :root {
+    :root {
       --brand-gold: #d8ad3d;
       --brand-blue: #0099ff;
       --brand-bg: #fdf8e8;
+      --brand-wh: white;
       --brand-text: #003f7a;
       --font-heading: Arial, Helvetica, sans-serif;
       --font-body: Arial, Helvetica, sans-serif;
@@ -31,10 +32,6 @@
     }
 
 
-    .text-brand {
-      color: var(--brand-gold);
-    }
-
     .btn-brand {
       background: var(--brand-gold);
       color: white;
@@ -47,10 +44,28 @@
       height: 35px;
     }
 
-    .hero-content {
-      max-width: 750px;
-      text-align: center;
+    .hero-content h1 {
+      color: var(--brand-text);
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 800;
+      line-height: 1.05;
+
+    }
+
+    .hero {
       background-color: var(--brand-bg);
+      min-height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: var(--space-8) var(--space-4);
+    }
+
+    .hero-content {
+      max-width: 900px;
+      margin: 0 auto;
+      
     }
 
     .hero-content p {
@@ -58,15 +73,17 @@
       margin-bottom: var(--space-5);
       font-size: 1.125rem;
       color: var(--color-muted);
+      
     }
 
-    #blue-color {
-        color: var(--brand-text);
-        
-    }
 
     #per-hour {
         padding: var(--space-5) var(--space-6);
+        background-color: var(--brand-text);
+        color: white;
+        border: none;
+        padding: var(--space-5) var(--space-7);
+        font-weight: 700;
         
     }
 
@@ -74,6 +91,88 @@
         padding: var(--space-5) var(--space-6);
     }
 
+    .choose-us {
+      background-color: var(--brand-wh);
+      min-height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      text-align: center;
+      padding: var(--space-8) var(--space-1);
+
+    }
+    
+    div h2 {
+      color: var(--brand-text);
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 800;
+      line-height: 1.05;
+
+    }
+
+    div p {
+      margin-top: var(--space-4);
+      margin-bottom: var(--space-5);
+      font-size: 1.125rem;
+      color: var(--color-muted);
+      
+    }
+
+    .choose-us-content {
+      max-width: 900px;
+      margin: 0 auto;
+      
+    }
+
+
+    .our-service {
+      background-color: var(--brand-bg);
+      min-height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      text-align: center;
+      padding: var(--space-8) var(--space-1);
+
+    }
+
+    .before-after { 
+      background-color: var(--brand-wh);
+      min-height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      text-align: center;
+      padding: var(--space-8) var(--space-1);
+
+    }
+
+    
+
+   .site-footer {
+      background-color: var(--brand-text);
+      color: white;
+      padding: var(--space-6) var(--space-4);
+      margin-top: 400px;
+      justify-content: center;
+    }
+
+    .site-footer p {
+      margin: 0;
+      color: white;
+    }
+
+    #social-media {
+      padding: var(--space-3) var(--space-2);
+      margin-top: 50px;
+
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
+    
     @media (max-width: 768px) {
       .nav-list {
         display: none;
