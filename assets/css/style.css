@@ -146,7 +146,39 @@
       padding: var(--space-8) var(--space-1);
 
     }
+    
+    .pricing-offers {
+      background-color: var(--brand-bg);
+      min-height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      text-align: center;
+      padding: var(--space-8) var(--space-1);
 
+    }
+
+    .testimonials { 
+      background-color: var(--brand-wh);
+      min-height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      text-align: center;
+      padding: var(--space-8) var(--space-1);
+
+    }
+
+    .contact-us {
+      background-color: var(--brand-bg);
+      min-height: 650px;
+      display: flex;
+      justify-content: center;
+      align-items: top;
+      text-align: center;
+      padding: var(--space-8) var(--space-1);
+
+    }
     
 
    .site-footer {
