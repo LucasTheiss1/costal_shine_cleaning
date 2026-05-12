@@ -38,6 +38,29 @@
       z-index: 1000;
     }
 
+    .navbar-brand {
+    transition: transform 0.2s ease;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.02);
+      color: var(--brand-text-gold) !important
+    }
+
+    .nav-link {
+    transition: 
+        color 0.3s ease,
+        transform 0.2s ease;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: var(--brand-gold) !important;
+
+      transform: translateY(-2px);
+      text-shadow: 0 15px 20px rgba(0,0,0,0.15);
+    }
+
     .brand-text-color {
       color: var(--brand-text-gold);
     }
@@ -86,6 +109,19 @@
       
     }
 
+    .btn {
+    transition: 
+        color 0.3s ease,
+        transform 0.2s ease;
+    }
+
+    .btn:hover,
+    .btn:focus {
+      color: var(--brand-wh) !important;
+
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
 
     #per-hour {
         width: min(90%, 350px);
