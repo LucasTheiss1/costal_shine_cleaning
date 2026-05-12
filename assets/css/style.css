@@ -1,9 +1,10 @@
     :root {
       --brand-gold: #d8ad3d;
       --brand-blue: #0099ff;
-      --brand-bg: #fdf8e8;
+      --brand-bg: #f8f7f4;
       --brand-wh: white;
-      --brand-text: #003f7a;
+      --brand-text: #2f67a5;
+      --brand-text-gold: #d9b24c;
       --font-heading: Arial, Helvetica, sans-serif;
       --font-body: Arial, Helvetica, sans-serif;
 
@@ -31,6 +32,9 @@
       font-family: var(--font-body);
     }
 
+    .brand-text-color {
+      color: var(--brand-text-gold);
+    }
 
     .btn-brand {
       background: var(--brand-gold);
@@ -45,7 +49,7 @@
     }
 
     .hero-content h1 {
-      color: var(--brand-text);
+      color: var(--brand-text-gold);
       font-size: clamp(3rem, 6vw, 5rem);
       font-weight: 800;
       line-height: 1.05;
@@ -78,13 +82,13 @@
 
 
     #per-hour {
-        width: min(90%, 320px);
-        padding: var(--space-4) 1.25rem;
+        width: min(90%, 350px);
+        padding: var(--space-5) 1rem;
         background-color: var(--brand-text);
         color: white;
         border: none;
         font-weight: 700;
-        font-size: clamp(1.1rem, 5vw, 1.75rem);
+        font-size: clamp(1.75rem, 5vw, 2rem);
         text-align: center;
         line-height: 1.3;
     }
@@ -93,6 +97,19 @@
         padding: var(--space-4);
         display: flex;
         justify-content: center;
+    }
+
+    #bookbtn {
+        width: min(90%, 180px);
+        padding: 20px 7px;
+        background-color: var(--brand-gold);
+        color: white;
+        border: none;
+        font-weight: 700;
+        font-size: clamp(1.2rem, 2.7vw, 1.5rem);
+        text-align: center;
+        line-height: 1.3;
+        margin-top: 32px;
     }
 
     .choose-us {
@@ -107,7 +124,7 @@
     }
     
     div h2 {
-      color: var(--brand-text);
+      color: var(--brand-text-gold);
       font-size: clamp(3rem, 6vw, 5rem);
       font-weight: 800;
       line-height: 1.05;
