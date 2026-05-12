@@ -32,6 +32,12 @@
       font-family: var(--font-body);
     }
 
+    .site-header{
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
     .brand-text-color {
       color: var(--brand-text-gold);
     }
