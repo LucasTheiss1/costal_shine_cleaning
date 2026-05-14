@@ -428,10 +428,10 @@
     
         
     .wave-line svg {
-        width: 300%;
-        height: 70px;
+        width: 250%;
+        height: 100px;
     
-        animation-duration: 3s;
+        animation-duration: 2.5s;
     }
 
     @keyframes waveMobile {
