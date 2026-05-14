@@ -32,6 +32,8 @@
       font-family: var(--font-body);
     }
 
+    /*Site Header and Navigation*/
+
     .site-header{
       position: sticky;
       top: 0;
@@ -67,6 +69,7 @@
       text-shadow: 0 15px 20px rgba(0,0,0,0.15);
     }
 
+    /*Brand Colors class and Btn*/
     .brand-blue {
         color: var(--brand-text);
     }
@@ -354,16 +357,44 @@
 
     
     /*Pricing and Offers Section*/
+
     .pricing-offers {
       background-color: var(--brand-bg);
-      min-height: 650px;
+      min-height: 480px;
       display: flex;
       justify-content: center;
-      align-items: top;
+      align-items: flex-start;
       text-align: center;
       padding: var(--space-8) var(--space-1);
 
     }
+
+    #pricing-btn {
+        width: min(100%, 900px);
+        padding: var(--space-5) 1rem;
+        background-color: var(--brand-text);
+        color: white;
+        border: none;
+        font-weight: 700;
+        font-size: clamp(2.25rem, 5vw, 3.25rem);
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    #space-pricing {
+        margin-top: 5rem;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #pricing-btn p {
+        font-size: clamp(1.25rem, 3vw, 1.25rem);
+    }
+
+
+
+    /*What costumers Say*/
 
     .testimonials { 
       background-color: var(--brand-wh);
@@ -376,6 +407,8 @@
 
     }
 
+     /*Contact Us*/
+
     .contact-us {
       background-color: var(--brand-bg);
       min-height: 650px;
@@ -386,7 +419,9 @@
       padding: var(--space-8) var(--space-1);
 
     }
-    
+
+
+    /*Footer section*/
 
    .site-footer {
       background-color: var(--brand-text);
