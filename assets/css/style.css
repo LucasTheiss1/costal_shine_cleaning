@@ -82,6 +82,8 @@
       border-radius: 12px;
     }
 
+    /*Wave line*/
+
     .wave-line {
       position: absolute;
       left: 0;
@@ -97,21 +99,21 @@
       display: block;
       width: 150%;
       height: 100px;
+
+      animation: waveFloat 2.0s ease-in-out infinite alternate;
     }
 
-    .wave-line path {
-    animation: seaWave 3s ease-in-out infinite alternate;
+    @keyframes waveFloat {
+        from {
+            transform: translateX(0) translateY(0);
+        }
+
+        to {
+            transform: translateX(-45px) translateY(6px);
+        }
     }
 
-    @keyframes seaWave {
-      from {
-          d: path("M0,50 C120,10 240,90 360,50 C480,10 600,90 720,50 C840,10 960,90 1080,50 C1200,10 1320,90 1440,50");
-      }
-
-      to {
-          d: path("M0,50 C120,90 240,10 360,50 C480,90 600,10 720,50 C840,90 960,10 1080,50 C1200,90 1320,10 1440,50");
-      }
-    }
+    /*Hero Section*/
 
     .hero-content h1 {
       color: var(--brand-text-gold);
@@ -191,6 +193,8 @@
         margin-top: 32px;
     }
 
+    /*Choose us Section*/
+
     .choose-us {
       background-color: var(--brand-wh);
       min-height: 480px;
@@ -268,6 +272,8 @@
       
     }
 
+    /*Services Section*/
+
     .our-service {
       background-color: var(--brand-bg);
       min-height: 600px;
@@ -284,7 +290,6 @@
         justify-content: center;
         gap: var(--space-7);
     }
-
 
     .card-body i {
         font-size: 4.75rem;
@@ -346,7 +351,7 @@
         object-fit: cover;
     }
 
-    
+
     
     /*Pricing and Offers Section*/
     .pricing-offers {
