@@ -424,8 +424,26 @@
       .choose-us-list {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
-        }  
+        }
+    
+        
+    .wave-line svg {
+        width: 300%;
+        height: 70px;
+    
+        animation-duration: 3s;
     }
+
+    @keyframes waveMobile {
+        from {
+            transform: translateX(0);
+        }
+    
+        to {
+            transform: translateX(-160px);
+        }
+    }
+}
 
     @media (max-width: 480px) {
       .choose-us-list {
