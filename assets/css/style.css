@@ -270,7 +270,7 @@
 
     .our-service {
       background-color: var(--brand-bg);
-      min-height: 650px;
+      min-height: 600px;
       display: flex;
       justify-content: center;
       align-items: top;
@@ -278,6 +278,45 @@
       padding: var(--space-8) var(--space-1);
 
     }
+
+    .service-cards {
+        margin-top: 4rem;
+        justify-content: center;
+        gap: var(--space-7);
+    }
+
+
+    .card-body i {
+        font-size: 4.75rem;
+        color: var(--brand-text);
+        margin-bottom: 1.25rem;
+    }
+
+    .card-body h3 {
+        color: var(--brand-text-gold);
+        
+    }
+
+    .card-body p {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .card {
+        padding: var(--space-6) 0;
+        background-color: var(--brand-bg);
+        border: 1px solid rgba(0,0,0,0.05);
+        transition:
+            color 0.3s ease,
+            transform 0.2s ease;
+    }
+
+    .card:hover,
+    .card:focus {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 20px rgba(0,0,0,0.15);
+    }
+    
 
     .before-after { 
       background-color: var(--brand-wh);
