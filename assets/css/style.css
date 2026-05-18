@@ -486,6 +486,31 @@
         cursor: pointer;
     }
 
+    /*WhatsApp Float*/
+
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 58px;
+    height: 58px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    color: white;
+}
+
     
 
     /*Footer section*/
