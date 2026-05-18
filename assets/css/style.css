@@ -282,7 +282,7 @@
       min-height: 600px;
       display: flex;
       justify-content: center;
-      align-items: top;
+      align-items: flex-start;
       text-align: center;
       padding: var(--space-8) var(--space-1);
 
