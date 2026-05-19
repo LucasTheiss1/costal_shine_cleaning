@@ -1,5 +1,5 @@
 const form = document.getElementById("form");
-const status = document.getElementById("form-status");
+
 
 form.addEventListener("submit", async function (event) {
   event.preventDefault();
@@ -15,8 +15,8 @@ form.addEventListener("submit", async function (event) {
   });
 
   if (response.ok) {
-    status.textContent = "Message sent successfully!";
     form.reset();
+    window.location.href = "thank_you.html";
   } else {
     status.textContent = "Something went wrong. Please try again.";
   }
