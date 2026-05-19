@@ -32,6 +32,10 @@
       font-family: var(--font-body);
     }
 
+    section {
+        scroll-margin-top: 90px;
+    }
+
     /*Site Header and Navigation*/
 
     .site-header{
@@ -572,6 +576,10 @@
 
     
     @media (max-width: 768px) {
+
+    section {
+        scroll-margin-top: 280px;
+    }
       .nav-list {
         display: none;
       }
@@ -605,6 +613,11 @@
 }
 
     @media (max-width: 480px) {
+
+        section {
+            scroll-margin-top: 280px;
+        }
+
       .choose-us-list {
         grid-template-columns: 1fr;
         gap: 1.5rem;
