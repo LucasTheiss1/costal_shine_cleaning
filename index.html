@@ -206,21 +206,29 @@ Great communication, very professional, and the quality of the cleaning was exce
       <h2>Contact Us</h2>
       <!-- Contact Form -->
          <div class="contact-container">
-            <form class="contact-form" action="/action_page.php">
+            <form id="form" class="contact-form" action="https://formspree.io/f/mykvzrvo" method="POST">
               <label for="name">Name</label>
-              <input type="text" id="name" name="name" placeholder="Name">
+              <input type="text" id="name" name="name" placeholder="Name" required>
             
               <label for="phone">Phone</label>
-              <input type="tel" id="phone" name="phone" placeholder="Phone">
+              <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+
+                <!--Honeypot anti-spam-->
+              <input type="text" name="_gotcha" style="display:none">
           
               <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-          
+              <textarea id="message" name="message" placeholder="Message" style="height:200px" required></textarea>
+                
               <input type="submit" value="Book your cleaning today">
+
+                <!--Form status message-->
+              <p id="form-status"></p>
             </form>
         </div>
     </div>
   </section>
+
+<!--WhatsApp Float Button-->
 <a 
   class="whatsapp-float"
   href="https://wa.me/447833771685?text=Hello%20I%20would%20like%20to%20book%20a%20cleaning"
@@ -229,6 +237,7 @@ Great communication, very professional, and the quality of the cleaning was exce
 >
   <i class="fa-brands fa-whatsapp"></i>
 </a>
+
 </main>
 <footer class="site-footer ">
   <div class="container-footer">
@@ -254,5 +263,6 @@ Great communication, very professional, and the quality of the cleaning was exce
 <script 
   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
 </script>
+<script src="assets/js/app.js"></script>
 </body>
 </html>
