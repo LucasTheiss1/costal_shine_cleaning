@@ -1,5 +1,5 @@
 const form = document.getElementById("form");
-
+const status = document.getElementById("form-status");
 
 form.addEventListener("submit", async function (event) {
   event.preventDefault();
